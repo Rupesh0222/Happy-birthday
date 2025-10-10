@@ -1,0 +1,20 @@
+/* PAGE4 - Get Well Soon message */
+.final-panel{
+  position:fixed; inset:0;
+  display:flex; justify-content:center; align-items:center;
+  background: linear-gradient(135deg,#fffaf0,#fff0f6);
+  flex-direction:column; text-align:center; z-index:100;
+  overflow:hidden;
+}
+.final-card{
+  max-width:780px; background:rgba(255,255,255,0.9);
+  padding:32px; border-radius:18px; box-shadow:0 12px 28px rgba(0,0,0,0.08);
+  text-align:center;
+}
+.final-card h1{ font-size:2rem; color:#ff6b9a; margin-bottom:16px; }
+.heartfelt-msg{ color:#444; line-height:1.6; font-size:1.05rem; margin-bottom:16px; opacity:0; transition:opacity 1s ease; }
+.subtle-msg{ font-size:1rem; color:#666; margin-top:8px; opacity:0; transition:opacity 1s ease; }
+
+/* Balloons floating animation (reuse from previous pages) */
+@keyframes floatUp4{ 0%{transform:translateY(0)} 50%{transform:translateY(-12px)} 100%{transform:translateY(0)} }
+.balloon-g{ animation:floatUp4 8s linear infinite; }

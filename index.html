@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Surprise 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Background decorations -->
+  <div class="balloon b1"></div>
+  <div class="balloon b2"></div>
+  <div class="balloon b3"></div>
+  <div class="balloon b4"></div>
+  <div class="balloon b5"></div>
+
+  <!-- Background music -->
+  <audio id="bgMusic" src="assets/happy.mp3" preload="auto"></audio>
+
+  <!-- Hero section -->
+  <div class="hero">
+    <div class="cake">🎂</div>
+    <h1>Someone Special’s Birthday 💖</h1>
+    <p>Let's see if you can unlock your surprise!</p>
+  </div>
+
+  <!-- Password popup -->
+  <div id="pwModal" class="modal show">
+    <div class="modal-content">
+      <h2>There’s a surprise for you, baby 🎁</h2>
+      <p class="small">Please enter the correct password</p>
+      <input id="passwordInput" type="password" placeholder="Enter password" autocomplete="off" />
+      <div class="buttons">
+        <button id="enterBtn" class="btn">Enter</button>
+      </div>
+      <p id="warn" class="warning" aria-live="polite"></p>
+    </div>
+  </div>
+
+  <!-- Loading screen -->
+  <div id="loadingScreen">
+    <div class="loader"></div>
+    <p>Loading your surprise...</p>
+  </div>
+
+  <canvas id="confettiCanvas"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>

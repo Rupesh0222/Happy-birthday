@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Happy Birthday — Surprise</title>
+  <link rel="stylesheet" href="style2.css" />
+</head>
+<body>
+  <!-- Confetti canvas (reused) -->
+  <canvas id="confettiCanvas2"></canvas>
+
+  <!-- Intro / countdown full-screen panel -->
+  <section id="introPanel" class="panel pastel-center">
+    <div class="intro-card">
+      <h2>Your surprise is waiting for you, my sweetheart 💖</h2>
+      <div class="countdown" id="countdown">10</div>
+      <p class="sub">Get ready…</p>
+    </div>
+  </section>
+
+  <!-- Fireworks / crackers burst layer (canvas) -->
+  <canvas id="burstCanvas" class="burst-canvas"></canvas>
+
+  <!-- Cake with candles -->
+  <section id="cakeStage" class="panel center-hidden">
+    <div class="cake-wrap">
+      <div class="cake-emoji">🎂</div>
+      <div class="candles">
+        <span class="candle c1"><i class="flame"></i></span>
+        <span class="candle c2"><i class="flame"></i></span>
+        <span class="candle c3"><i class="flame"></i></span>
+      </div>
+      <h3 class="blow-text">Blow the candles, baby! 🎉</h3>
+    </div>
+  </section>
+
+  <!-- Main gallery / wishes -->
+  <main id="gallerySection" class="panel gallery-hidden">
+    <!-- Floating balloons top -->
+    <div class="top-balloons">
+      <div class="balloon-g bA"></div>
+      <div class="balloon-g bB"></div>
+      <div class="balloon-g bC"></div>
+    </div>
+
+    <!-- Wishes -->
+    <section class="wishes-card">
+      <h2>Happy Birthday, Manya! 🥳</h2>
+      <p class="heartfelt">
+        Manya — tujhe bohot bohot Happy Birthday!  
+        Hum dono — <strong>Rupesh</strong> &amp; <strong>Daivik</strong> — tere liye hamesha khushiyan chahte hain.  
+        May your day be full of love, cake and magical moments. ❤️
+      </p>
+    </section>
+
+    <!-- Photo gallery -->
+    <section class="photos-grid">
+      <figure class="photo"><img src="assests/photo1.jpg" alt="photo1"></figure>
+      <figure class="photo"><img src="assests/photo2.jpg" alt="photo2"></figure>
+      <figure class="photo"><img src="assests/photo3.jpg" alt="photo3"></figure>
+      <figure class="photo"><img src="assests/photo4.jpg" alt="photo4"></figure>
+      <figure class="photo"><img src="assests/photo5.jpg" alt="photo5"></figure>
+      <figure class="photo"><img src="assests/photo6.jpg" alt="photo6"></figure>
+    </section>
+  </main>
+    <!-- More surprises button -->
+<div class="more-surprise-btn-wrap">
+  <button id="moreBtn" class="btn-surprise">🎁 More Surprises!</button>
+  <p id="redirectMsg" class="redirect-msg"></p>
+</div>
+  <script src="script2.js"></script>
+</body>
+</html>
